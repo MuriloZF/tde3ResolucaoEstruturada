@@ -1,0 +1,41 @@
+import java.util.Random;
+class SelectionSort{
+	static void selectionSort(int size, int[] list){
+		int swap = 0;
+		int iterations = 0;
+		boolean flag;
+		for(int i = 0; i < size - 1; i++){
+			iterations++;
+			int minIndex = i;
+			for(int j = i + 1; j < size; j++){
+				if(list[j] < list[minIndex]){
+					minIndex = j;
+				}
+			}
+			if(minIndex != i){
+				int temp = list[i];
+				list[i] = list[minIndex];
+				list[minIndex] = temp;
+				swap++;
+			}
+		}
+		System.out.printf("Sorted (Selection Sort):\n");
+		for(int i = 0; i < size; i++){
+			System.out.printf("%d, ", list[i]);
+		}
+		System.out.printf("\nSwaps: %d.\n", swap);
+		System.out.printf("Iterations: %d.\n", iterations);
+	}
+
+}
+
+public class SelectionSortImplementation{
+	public static void main(String[]args){
+		SelectionSort selectionSort = new SelectionSort();
+		CreateList createList = new CreateList();
+		int size = 20;
+		selectionSort.selectionSort(size, createList.createFirstList());
+		selectionSort.selectionSort(size, createList.createSecondList());
+		selectionSort.selectionSort(size, createList.createThirdList());
+	}
+}
