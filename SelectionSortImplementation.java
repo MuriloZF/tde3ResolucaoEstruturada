@@ -3,7 +3,10 @@ class SelectionSort{
 	static void selectionSort(int size, int[] list){
 		int swap = 0;
 		int iterations = 0;
-		boolean flag;
+		long startTime = 0;
+		long elapsedTime = 0;
+		double finalTime = 0;
+		startTime = System.nanoTime();
 		for(int i = 0; i < size - 1; i++){
 			iterations++;
 			int minIndex = i;
@@ -19,12 +22,15 @@ class SelectionSort{
 				swap++;
 			}
 		}
-		System.out.printf("Sorted (Selection Sort):\n");
+		elapsedTime = System.nanoTime() - startTime;
+		finalTime = elapsedTime / 1_000_000_000.0;
+		System.out.printf("Ordenado (Selection Sort):\n");
 		for(int i = 0; i < size; i++){
 			System.out.printf("%d, ", list[i]);
 		}
-		System.out.printf("\nSwaps: %d.\n", swap);
-		System.out.printf("Iterations: %d.\n", iterations);
+		System.out.printf("\nTrocas: %d.\n", swap);
+		System.out.printf("Iterações: %d.\n", iterations);
+		System.out.printf("Tempo: %fs.\n", finalTime);
 	}
 
 }
