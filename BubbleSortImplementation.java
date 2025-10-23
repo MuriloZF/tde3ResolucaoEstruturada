@@ -11,8 +11,8 @@ class BubbleSort{
 		startTime = System.nanoTime();
 		for(int i  = 0; i < size; i++){
 			flag = false;
+			iteration++;
 			for(int j = 1; j < size - i; j++){
-				iteration++;
 				if(list[j-1] > list[j]){
 					temp = list[j-1];
 					list[j-1] = list[j];
