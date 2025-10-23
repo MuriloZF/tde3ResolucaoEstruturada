@@ -4,7 +4,11 @@ class BubbleSort{
 		int temp = 0;
 		int swaps = 0;
 		int iteration = 0;
+		long startTime = 0;
+		long elapsedTime = 0;
+		double finalTime = 0;
 		boolean flag;
+		startTime = System.nanoTime();
 		for(int i  = 0; i < size; i++){
 			flag = false;
 			for(int j = 1; j < size - i; j++){
@@ -21,12 +25,15 @@ class BubbleSort{
 				break;
 			}
 		}
-		System.out.printf("Sorted list:\n");
+		elapsedTime = System.nanoTime() - startTime;
+		finalTime = elapsedTime / 1_000_000_000.0;
+		System.out.printf("Ordenado (Bubble Sort):\n");
 		for(int i = 0; i < size; i++){
 			System.out.printf("%d, ", list[i]);
 		}
-		System.out.printf("\nSwaps: %d.\n", swaps);
-		System.out.printf("Iterations: %d.\n", iteration);
+		System.out.printf("\nTrocas: %d.\n", swaps);
+		System.out.printf("Iterações: %d.\n", iteration);
+		System.out.printf("Tempo: %fs.\n", finalTime);
 	}
 }
 
