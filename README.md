@@ -18,7 +18,7 @@
 | Bubble Sort    |    78  |      15     | 0.000016 |
 | Selection Sort |    18  |      19     | 0.000017 |
 | Cocktail Sort  |    78  |       6     | 0.000017 |
-| Comb Sort      |        |             |          |
+| Comb Sort      |    22  |       9     | 0.000017 |
 | Gnome Sort     |        |             |          |
 | Bucket Sort    |        |             |          |
 
@@ -29,7 +29,7 @@
 | Bubble Sort    |    0   |       1     | 0.000002 |
 | Selection Sort |    0   |      19     | 0.000011 |
 | Cocktail Sort  |    0   |       1     | 0.000005 |
-| Comb Sort      |        |             |          |
+| Comb Sort      |    0   |       8     | 0.000033 |
 | Gnome Sort     |        |             |          |
 | Bucket Sort    |        |             |          |
 
@@ -40,7 +40,7 @@
 | Bubble Sort    |  190   |      20     | 0.000024 |
 | Selection Sort |   10   |      19     | 0.000013 |
 | Cocktail Sort  |  190   |      10     | 0.000024 |
-| Comb Sort      |        |             |          |
+| Comb Sort      |   18   |       9     | 0.000017 |
 | Gnome Sort     |        |             |          |
 | Bucket Sort    |        |             |          |
 
