@@ -19,7 +19,7 @@
 | Selection Sort |    18  |      19     | 0.000017 |
 | Cocktail Sort  |    78  |       6     | 0.000017 |
 | Comb Sort      |    22  |       9     | 0.000017 |
-| Gnome Sort     |        |             |          |
+| Gnome Sort     |    78  |     176     | 0.000005 |
 | Bucket Sort    |        |             |          |
 
 ### Lista 2:
@@ -30,7 +30,7 @@
 | Selection Sort |    0   |      19     | 0.000011 |
 | Cocktail Sort  |    0   |       1     | 0.000005 |
 | Comb Sort      |    0   |       8     | 0.000033 |
-| Gnome Sort     |        |             |          |
+| Gnome Sort     |    0   |      20     | 0.000001 |
 | Bucket Sort    |        |             |          |
 
 ### Lista 3:
@@ -41,6 +41,6 @@
 | Selection Sort |   10   |      19     | 0.000013 |
 | Cocktail Sort  |  190   |      10     | 0.000024 |
 | Comb Sort      |   18   |       9     | 0.000017 |
-| Gnome Sort     |        |             |          |
+| Gnome Sort     |  190   |      400    | 0.000015 |
 | Bucket Sort    |        |             |          |
 
