@@ -1,4 +1,3 @@
-import java.util.Random;
 class BubbleSort{
 	static void bubblesort(int size, int [] list){
 		int temp = 0;
