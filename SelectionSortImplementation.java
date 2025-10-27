@@ -1,4 +1,3 @@
-import java.util.Random;
 class SelectionSort{
 	static void selectionSort(int size, int[] list){
 		int swap = 0;
