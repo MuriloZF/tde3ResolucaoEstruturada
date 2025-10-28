@@ -1,7 +1,8 @@
 class CocktailSort{
 	public static void cocktailsort(int size, int[] list){
 		int swaps = 0;
-		int iteration = 0;
+		int passes = 0;
+		int comparisons = 0;
 		int temp;
 		int start = 0;
 		int end = size - 1;
@@ -12,8 +13,9 @@ class CocktailSort{
 		startTime = System.nanoTime();
 		while(flag){
 			flag = false;
-			iteration++;
+			passes++;
 			for(int i = start; i < end; i++){
+				comparisons++;
 				if(list[i] > list[i + 1]){
 					temp = list[i];
 					list[i] = list[i + 1];
@@ -28,6 +30,7 @@ class CocktailSort{
 			flag = false;
 			end--;
 			for(int i = end; i > start; i--){
+				comparisons++;
 				if(list[i] < list[i -1]){
 					temp = list[i];
 					list[i] = list[i - 1];
@@ -44,8 +47,9 @@ class CocktailSort{
 		for(int i = 0; i < size; i++){
 			System.out.printf("%d, ", list[i]);
 		}
-		System.out.printf("\nTrocas: %d,\n", swaps);
-		System.out.printf("Iterações: %d.\n", iteration);
+		System.out.printf("\nTrocas: %d.\n", swaps);
+		System.out.printf("Comparações: %d.\n", comparisons);
+		System.out.printf("Iterações: %d.\n", passes);
 		System.out.printf("Tempo: %fs.\n", finalTime);
 	} 
 }
