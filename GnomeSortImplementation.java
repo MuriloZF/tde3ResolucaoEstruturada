@@ -3,15 +3,20 @@ class GnomeSort{
 		int i = 0;
 		int temp = 0;
 		int swaps = 0;
-		int iterations = 0;
+		int passes = 0;
+		int comparisons = 0;
 		long startTime = 0;
 		long elapsedTime = 0;
 		double finalTime = 0;
 		startTime = System.nanoTime();
 		while(i < size){
-			iterations++;
-			if(i == 0 || list[i - 1] <= list[i]){
+			passes++;
+			if(i == 0){
 				i++;
+			}
+			if(list[i - 1] <= list[i]){
+				i++;
+				comparisons++;
 			}
 			else{
 				temp = list[i];
@@ -28,7 +33,8 @@ class GnomeSort{
 			System.out.printf("%d, ", list[index]);
 		}
 		System.out.printf("\nTrocas: %d.\n", swaps);
-		System.out.printf("Iterações: %d.\n", iterations);
+		System.out.printf("Comparações: %d.\n", comparisons);
+		System.out.printf("Iterações: %d.\n", passes);
 		System.out.printf("Tempo: %fs.\n", finalTime);
 	}
 }
