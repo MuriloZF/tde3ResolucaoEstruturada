@@ -2,7 +2,8 @@ class CombSort{
 	static void combsort(int size, int [] list){
 		int temp = 0;
 		int swaps = 0;
-		int iteration = 0;
+		int passes = 0;
+		int comparisons = 0;
 		int gap = size;
 		double shrink = 1.3;
 		long startTime = 0;
@@ -11,13 +12,14 @@ class CombSort{
 		boolean flag = true;
 		startTime = System.nanoTime();
 		while(gap > 1 || flag){
+			passes++;
 			gap = (int)(gap / shrink);
 			if(gap < 1){
 				gap = 1;
 			}
 			flag = false;
-			iteration++;
 			for(int j = 0; j + gap < size; j++){
+				comparisons++;
 				if(list[j] > list[j + gap]){
 					temp = list[j + gap];
 					list[j + gap] = list[j];
@@ -33,7 +35,8 @@ class CombSort{
 			System.out.printf("%d, ", list[i]);
 		}
 		System.out.printf("\nTrocas: %d.\n", swaps);
-		System.out.printf("Iterações: %d.\n", iteration);
+		System.out.printf("Comparações: %d.\n", comparisons);
+		System.out.printf("Iterações: %d.\n", passes);
 		System.out.printf("Tempo: %fs.\n", finalTime);
 	}
 }
