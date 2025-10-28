@@ -2,7 +2,8 @@ class BubbleSort{
 	static void bubblesort(int size, int [] list){
 		int temp = 0;
 		int swaps = 0;
-		int iteration = 0;
+		int passes = 0;
+		int comparisons = 0;
 		long startTime = 0;
 		long elapsedTime = 0;
 		double finalTime = 0;
@@ -10,8 +11,9 @@ class BubbleSort{
 		startTime = System.nanoTime();
 		for(int i  = 0; i < size; i++){
 			flag = false;
-			iteration++;
+			passes++;
 			for(int j = 1; j < size - i; j++){
+				comparisons++;
 				if(list[j-1] > list[j]){
 					temp = list[j-1];
 					list[j-1] = list[j];
@@ -31,7 +33,8 @@ class BubbleSort{
 			System.out.printf("%d, ", list[i]);
 		}
 		System.out.printf("\nTrocas: %d.\n", swaps);
-		System.out.printf("Iterações: %d.\n", iteration);
+		System.out.printf("Comparações: %d.\n", comparisons);
+		System.out.printf("Iterações: %d.\n", passes);
 		System.out.printf("Tempo: %fs.\n", finalTime);
 	}
 }
