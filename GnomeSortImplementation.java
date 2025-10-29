@@ -23,7 +23,7 @@ class GnomeSort{
 				list[i] = list[i - 1];
 				list[i - 1] = temp;
 				i--;
-				swaps++;
+				swaps += 2;
 			}
 		}
 		elapsedTime = System.nanoTime() - startTime;
