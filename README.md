@@ -20,7 +20,7 @@ Lista 3 (Decrescente):{99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 1
 
 ## Resultados:
 ### Foi calculado:
-	- Trocas: Número de vezes que os elementos foram trocados;
+	- Trocas (Movimentos): Número de vezes que os elementos foram escritos/empossados (atribuições em arrays);
 	- Comparação: Número de vezes que os valores foram comparados;
 	- Iterações: Quantas iterações foram feitas na lista;
 	- Tempo: Tempo para realizar a operação.
@@ -30,33 +30,35 @@ Lista 3 (Decrescente):{99, 85, 73, 60, 50, 40, 35, 30, 25, 20, 15, 14, 13, 12, 1
 
 | Algoritmo      | Trocas | Comparações | Iterações | Tempo (s) | Rank |
 |----------------|--------|-------------|-----------|-----------|------|
-| Bubble Sort    |     78 |         180 |        15 | 0.000016  |      |
-| Selection Sort |     18 |         190 |        19 | 0.000017  |      |
-| Cocktail Sort  |     78 |         154 |         6 | 0.000017  |      |
-| Comb Sort      |     22 |         129 |         9 | 0.000017  |      |
-| Gnome Sort     |     78 |          96 |       174 | 0.000005  |      |
-| Bucket Sort    |        |             |           |           |      |
+| Bubble Sort    |    156 |         180 |        15 | 0.000058  |    5 |
+| Selection Sort |     36 |         190 |        19 | 0.000005  |    3 |
+| Cocktail Sort  |    154 |         154 |         6 | 0.000003  |    4 |
+| Comb Sort      |     44 |         129 |         9 | 0.000004  |    2 |
+| Gnome Sort     |    156 |          96 |       174 | 0.000005  |    6 |
+| Bucket Sort    |     20 |          40 |         2 | 0.000028  |    1 |
 
 ### Lista 2:
 
 | Algoritmo      | Trocas | Comparações | Iterações | Tempo (s) | Rank |
 |----------------|--------|-------------|-----------|-----------|------|
-| Bubble Sort    |      0 |          19 |         1 | 0.000002  |      |
-| Selection Sort |      0 |         190 |        19 | 0.000011  |      |
-| Cocktail Sort  |      0 |          19 |         1 | 0.000005  |      |
-| Comb Sort      |      0 |         110 |         8 | 0.000033  |      |
-| Gnome Sort     |      0 |          19 |        19 | 0.000001  |      |
-| Bucket Sort    |        |             |           |           |      |
+| Bubble Sort    |      0 |          19 |         1 | 0.000002  |    1 |
+| Selection Sort |      0 |         190 |        19 | 0.000011  |    6 |
+| Cocktail Sort  |      0 |          19 |         1 | 0.000005  |    2 |
+| Comb Sort      |      0 |         110 |         8 | 0.000033  |    5 |
+| Gnome Sort     |      0 |          19 |        19 | 0.000001  |    3 |
+| Bucket Sort    |      0 |          40 |         2 | 0.000030  |    4 |
 
 ### Lista 3:
 
 | Algoritmo      | Trocas | Comparações | Iterações | Tempo (s) | Rank |
 |----------------|--------|-------------|-----------|-----------|------|
-| Bubble Sort    |    190 |         190 |        20 | 0.000024  |      |
-| Selection Sort |     10 |         190 |        19 | 0.000013  |      |
-| Cocktail Sort  |    190 |         190 |        10 | 0.000024  |      |
-| Comb Sort      |     18 |         129 |         9 | 0.000017  |      |
-| Gnome Sort     |    190 |         190 |       380 | 0.000015  |      |
-| Bucket Sort    |        |             |           |           |      |
+| Bubble Sort    |    380 |         190 |        20 | 0.000065  |    5 |
+| Selection Sort |     20 |         190 |        19 | 0.000012  |    3 |
+| Cocktail Sort  |    380 |         190 |        10 | 0.000058  |    4 |
+| Comb Sort      |     36 |         129 |         9 | 0.000023  |    2 |
+| Gnome Sort     |    380 |         190 |       380 | 0.000011  |    6 |
+| Bucket Sort    |     20 |          58 |         8 | 0.000009  |    1 |
+
+
 
 
