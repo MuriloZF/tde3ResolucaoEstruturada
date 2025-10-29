@@ -17,11 +17,11 @@ class SelectionSort{
 				}
 			}
 			if(minIndex != i){
-				int temp = list[i];
-				list[i] = list[minIndex];
-				list[minIndex] = temp;
-				swap++;
-			}
+					int temp = list[i];
+					list[i] = list[minIndex];
+					list[minIndex] = temp;
+					swap += 2;
+				}
 		}
 		elapsedTime = System.nanoTime() - startTime;
 		finalTime = elapsedTime / 1_000_000_000.0;
