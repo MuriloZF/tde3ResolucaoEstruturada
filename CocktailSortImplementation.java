@@ -20,8 +20,8 @@ class CocktailSort{
 					temp = list[i];
 					list[i] = list[i + 1];
 					list[i + 1] = temp;
-					swaps++;
-					flag = true;		
+					swaps += 2;
+					flag = true;
 				}
 			}
 			if(!flag){
@@ -35,7 +35,7 @@ class CocktailSort{
 					temp = list[i];
 					list[i] = list[i - 1];
 					list[i -1] = temp;
-					swaps++;
+					swaps += 2;
 					flag = true;
 				}
 			}
