@@ -19,13 +19,13 @@ class CombSort{
 			}
 			flag = false;
 			for(int j = 0; j + gap < size; j++){
-				comparisons++;
-				if(list[j] > list[j + gap]){
-					temp = list[j + gap];
-					list[j + gap] = list[j];
-					list[j] = temp;
-					swaps++; flag = true;
-				}	
+					comparisons++;
+					if(list[j] > list[j + gap]){
+						temp = list[j + gap];
+						list[j + gap] = list[j];
+						list[j] = temp;
+						swaps += 2; flag = true;
+					} 	
 			}
 		}
 		elapsedTime = System.nanoTime() - startTime;
