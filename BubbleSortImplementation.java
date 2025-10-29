@@ -18,7 +18,7 @@ class BubbleSort{
 					temp = list[j-1];
 					list[j-1] = list[j];
 					list[j] = temp;
-					swaps++;
+					swaps += 2;
 					flag = true;
 				}
 			}
